@@ -1,12 +1,17 @@
 <?php
 
 namespace GF;
+include_once 'Loader.php';
 class App
 {
     private static $_instance=null;
 
+    private function __construct(){
+        \GF\Loader::registerAutoLoad();
+    }
+
     public function run(){
-        echo "okkkk";
+
     }
 
     /**
